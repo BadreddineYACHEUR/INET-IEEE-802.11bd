@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on sam. 23 mai 2020 23:44:29 CEST by Eclipse SUMO netedit Version v1_5_0+0183-292c3d1261
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.add.xml"/>
+        <route-files value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <poly id="poly_0" type="building" color="106,168,219" fill="1" layer="4.00" shape="10.000000,10.000000 110.000000,10.000000 110.000000,110.000000 10.000000,110.000000 10.000000,10.000000"/>
+    <poly id="poly_1" type="building" color="106,168,219" fill="1" layer="4.00" shape="130.000000,10.000000 230.000000,10.000000 230.000000,110.000000 130.000000,110.000000 130.000000,10.000000"/>
+    <poly id="poly_10" type="building" color="106,168,219" fill="1" layer="4.00" shape="10.000000,250.000000 110.000000,250.000000 110.000000,350.000000 10.000000,350.000000 10.000000,250.000000"/>
+    <poly id="poly_11" type="building" color="106,168,219" fill="1" layer="4.00" shape="130.000000,250.000000 230.000000,250.000000 230.000000,350.000000 130.000000,350.000000 130.000000,250.000000"/>
+    <poly id="poly_12" type="building" color="106,168,219" fill="1" layer="4.00" shape="250.000000,250.000000 350.000000,250.000000 350.000000,350.000000 250.000000,350.000000 250.000000,250.000000"/>
+    <poly id="poly_13" type="building" color="106,168,219" fill="1" layer="4.00" shape="370.000000,250.000000 470.000000,250.000000 470.000000,350.000000 370.000000,350.000000 370.000000,250.000000"/>
+    <poly id="poly_14" type="building" color="106,168,219" fill="1" layer="4.00" shape="490.000000,250.000000 590.000000,250.000000 590.000000,350.000000 490.000000,350.000000 490.000000,250.000000"/>
+    <poly id="poly_15" type="building" color="106,168,219" fill="1" layer="4.00" shape="10.000000,370.000000 110.000000,370.000000 110.000000,470.000000 10.000000,470.000000 10.000000,370.000000"/>
+    <poly id="poly_16" type="building" color="106,168,219" fill="1" layer="4.00" shape="130.000000,370.000000 230.000000,370.000000 230.000000,470.000000 130.000000,470.000000 130.000000,370.000000"/>
+    <poly id="poly_17" type="building" color="106,168,219" fill="1" layer="4.00" shape="250.000000,370.000000 350.000000,370.000000 350.000000,470.000000 250.000000,470.000000 250.000000,370.000000"/>
+    <poly id="poly_18" type="building" color="106,168,219" fill="1" layer="4.00" shape="370.000000,370.000000 470.000000,370.000000 470.000000,470.000000 370.000000,470.000000 370.000000,370.000000"/>
+    <poly id="poly_19" type="building" color="106,168,219" fill="1" layer="4.00" shape="490.000000,370.000000 590.000000,370.000000 590.000000,470.000000 490.000000,470.000000 490.000000,370.000000"/>
+    <poly id="poly_2" type="building" color="106,168,219" fill="1" layer="4.00" shape="250.000000,10.000000 350.000000,10.000000 350.000000,110.000000 250.000000,110.000000 250.000000,10.000000"/>
+    <poly id="poly_20" type="building" color="106,168,219" fill="1" layer="4.00" shape="10.000000,490.000000 110.000000,490.000000 110.000000,590.000000 10.000000,590.000000 10.000000,490.000000"/>
+    <poly id="poly_21" type="building" color="106,168,219" fill="1" layer="4.00" shape="130.000000,490.000000 230.000000,490.000000 230.000000,590.000000 130.000000,590.000000 130.000000,490.000000"/>
+    <poly id="poly_22" type="building" color="106,168,219" fill="1" layer="4.00" shape="250.000000,490.000000 350.000000,490.000000 350.000000,590.000000 250.000000,590.000000 250.000000,490.000000"/>
+    <poly id="poly_23" type="building" color="106,168,219" fill="1" layer="4.00" shape="370.000000,490.000000 470.000000,490.000000 470.000000,590.000000 370.000000,590.000000 370.000000,490.000000"/>
+    <poly id="poly_24" type="building" color="106,168,219" fill="1" layer="4.00" shape="490.000000,490.000000 590.000000,490.000000 590.000000,590.000000 490.000000,590.000000 490.000000,490.000000"/>
+    <poly id="poly_3" type="building" color="106,168,219" fill="1" layer="4.00" shape="370.000000,10.000000 470.000000,10.000000 470.000000,110.000000 370.000000,110.000000 370.000000,10.000000"/>
+    <poly id="poly_4" type="building" color="106,168,219" fill="1" layer="4.00" shape="490.000000,10.000000 590.000000,10.000000 590.000000,110.000000 490.000000,110.000000 490.000000,10.000000"/>
+    <poly id="poly_5" type="building" color="106,168,219" fill="1" layer="4.00" shape="10.000000,130.000000 110.000000,130.000000 110.000000,230.000000 10.000000,230.000000 10.000000,130.000000"/>
+    <poly id="poly_6" type="building" color="106,168,219" fill="1" layer="4.00" shape="130.000000,130.000000 230.000000,130.000000 230.000000,230.000000 130.000000,230.000000 130.000000,130.000000"/>
+    <poly id="poly_7" type="building" color="106,168,219" fill="1" layer="4.00" shape="250.000000,130.000000 350.000000,130.000000 350.000000,230.000000 250.000000,230.000000 250.000000,130.000000"/>
+    <poly id="poly_8" type="building" color="106,168,219" fill="1" layer="4.00" shape="370.000000,130.000000 470.000000,130.000000 470.000000,230.000000 370.000000,230.000000 370.000000,130.000000"/>
+    <poly id="poly_9" type="building" color="106,168,219" fill="1" layer="4.00" shape="490.000000,130.000000 590.000000,130.000000 590.000000,230.000000 490.000000,230.000000 490.000000,130.000000"/>
+</additional>

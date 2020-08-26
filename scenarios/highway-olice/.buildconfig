@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/root/.cache/gnome-builder/install/highway-olice/host
+app-id=
+postbuild=
+prebuild=
+default=true

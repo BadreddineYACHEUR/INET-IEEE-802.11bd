@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on ven. 21 févr. 2020 15:01:38 CET by Eclipse SUMO netedit Version v1_5_0+0183-292c3d1261
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/yacheur/apps/artery/scenarios/congestion/congestion.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/yacheur/apps/artery/scenarios/congestion/congestion.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/yacheur/apps/artery/scenarios/congestion/congestion.add.xml"/>
+        <route-files value="/home/yacheur/apps/artery/scenarios/congestion/congestion.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="car0" accel="0.8" decel="4.5" sigma="0" length="5" maxSpeed="70" tau="0.2" minGap="0.5"/>
+    <vType id="car1" accel="0.8" decel="4.5" sigma="0" length="5" maxSpeed="50" tau="0.2" minGap="0.5"/>
+    <route edges="0to1 1to2 2to3 3to4 4to0" color="yellow" id="route_0"/>
+    <route edges="0to1 1to5 5to6 6to7 7to0" color="red" id="route_1"/>
+    <vehicle id="troubler" type="car0" depart="0.00" color="green" route="route_0"/>
+    <flow id="flow_0" type="car1" begin="0.00" color="red" from="0to1" to="7to0" end="10" number="100"/>
+    <flow id="flow_1" type="car0" begin="0.00" from="0to1" to="4to0" end="10" number="100"/>
+</routes>

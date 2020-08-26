@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on sam. 23 mai 2020 23:44:24 CEST by Eclipse SUMO netedit Version v1_5_0+0183-292c3d1261
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="/home/yacheur/apps/artery/scenarios/ieee-grid-streaming/grid_streaming.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <flow id="flow_0" begin="0.00" from="A5B5" to="B5A5" via="B5C5 C5D5 D5E5 E5F5 F5F4 F4E4 E4E5 E5D5 D5C5 C5B5" period="2" number="20"/>
+    <flow id="flow_1" begin="0.00" color="blue" from="A0B0" to="B0A0" via="B0C0 C0D0 D0E0 E0F0 F0F1 F1E1 E1E0 E0D0 D0C0 C0B0" period="2" number="20"/>
+</routes>

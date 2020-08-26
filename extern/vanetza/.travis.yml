@@ -1,0 +1,14 @@
+sudo: required
+language: minimal
+services:
+ - docker
+
+install:
+ - docker build --tag vanetza/xenial-build tools/docker
+
+script:
+ - docker run -itd
+     --mount type=bind,source=$TRAVIS_BUILD_DIR,destination=/travis/build
+     --name xenial vanetza/xenial-build
+ - chmod -R a+w $TRAVIS_BUILD_DIR
+ - docker exec xenial /travis/build/tools/docker/build_and_run_tests.sh

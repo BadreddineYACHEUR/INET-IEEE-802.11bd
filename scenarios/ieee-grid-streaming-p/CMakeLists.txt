@@ -1,0 +1,4 @@
+add_artery_feature(ieee_grid_streaming_p StreamingService.cc)
+generate_opp_message(Streaming.msg TARGET ieee_grid_streaming_p DIRECTORY ieee_streaming_msgs)
+add_opp_run(ieee_grid_streaming_p NED_FOLDERS ${CMAKE_CURRENT_SOURCE_DIR})
+

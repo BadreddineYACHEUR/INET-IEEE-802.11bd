@@ -1,0 +1,20 @@
+<configuration>
+    <input>
+        <net-file value="congestion.net.xml"/>
+        <route-files value="congestion.rou.xml"/>
+	<additional-files value="congestion.add.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+        <step-length value="0.2"/>
+    </time>
+    <processing>
+    	<collision.action value="none"/>
+    	<time-to-teleport value="-1"/>
+    </processing>
+
+<report>
+  <xml-validation value="never"/>
+</report>
+</configuration>

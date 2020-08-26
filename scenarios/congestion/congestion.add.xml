@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on ven. 21 févr. 2020 15:13:04 CET by Eclipse SUMO netedit Version v1_5_0+0183-292c3d1261
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/yacheur/apps/artery/scenarios/congestion/congestion.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/yacheur/apps/artery/scenarios/congestion/congestion.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/yacheur/apps/artery/scenarios/congestion/congestion.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additionals>
+    <rerouter id="rerouter_00" edges="0to1" vTypes="car0">
+        <interval end="1e9">
+           <destProbReroute id="1to2"/>
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_01" edges="1to2" vTypes="car0">
+        <interval end="1e9">
+           <destProbReroute id="0to1"/>
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_10" edges="0to1" vTypes="car1">
+        <interval end="1e9">
+           <destProbReroute id="1to5"/>
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_11" edges="1to5" vTypes="car1">
+        <interval end="1e9">
+           <destProbReroute id="0to1"/>
+        </interval>
+    </rerouter>
+   
+</additionals>
+
