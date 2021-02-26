@@ -694,6 +694,7 @@ const simtime_t Ieee80211VHTDataMode::getDuration(int dataBitLength) const
     return numberOfSymbols * getSymbolInterval();
 }
 
+// modified to recognize the 5.9GHz&20MHz band
 const simtime_t Ieee80211VHTMode::getSlotTime() const
 {
     if (carrierFrequencyMode  == BAND_5GHZ)
@@ -705,6 +706,7 @@ const simtime_t Ieee80211VHTMode::getSlotTime() const
 			throw cRuntimeError("Unsupported carrier frequency");
 }
 
+// modified to recognize the 5.9GHz&20MHz band
 inline const simtime_t Ieee80211VHTMode::getSifsTime() const
 {
     if (carrierFrequencyMode == BAND_5GHZ)
