@@ -139,7 +139,7 @@ void Middleware::initializeServices(int stage)
 				mTransportDispatcher.addListener(service, td);
 				service->addTransportDescriptor(td);
 			}
-			if (listener->getAttribute("channel-bd")){
+			if (listener->getAttribute("channel-bd")){		//to consider a service operating using the 20MHz bd channel
 				TransportDescriptor td = std::forward_as_tuple(getChannelBD(listener), port);
 				mTransportDispatcher.addListener(service, td);
 				service->addTransportDescriptor(td);
@@ -149,7 +149,7 @@ void Middleware::initializeServices(int stage)
                         ChannelNumber channel = getChannel(listener);
                         mTransportDispatcher.addPromiscuousListener(promiscuous, channel);
                         ++channels;
-                    } else if (promiscuous && listener->getAttribute("channel-bd")) {
+                    } else if (promiscuous && listener->getAttribute("channel-bd")) {		// to consider a service operating using the 20MHz bd channel
                         ChannelNumber channel = getChannelBD(listener);
                         mTransportDispatcher.addPromiscuousListener(promiscuous, channel);
                         ++channels;
