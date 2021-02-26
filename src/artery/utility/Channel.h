@@ -60,8 +60,8 @@ constexpr ChannelNumber SCH6 = 184;
 //constexpr ChannelNumber SCH0_BD = 173;
 //constexpr ChannelNumber SCH1_BD = 179;
 
-constexpr ChannelNumber SCH0_BD = 0;
-constexpr ChannelNumber SCH1_BD = 1;
+constexpr ChannelNumber SCH0_BD = 0; // 1st 20MHz bd channel a.k.a 173
+constexpr ChannelNumber SCH1_BD = 1; // 1st 20MHz bd channel a.k.a 179
 
 
 } // namespace channel
