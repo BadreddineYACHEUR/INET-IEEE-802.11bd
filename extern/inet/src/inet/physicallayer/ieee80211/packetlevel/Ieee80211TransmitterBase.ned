@@ -30,8 +30,8 @@ import inet.physicallayer.base.packetlevel.NarrowbandTransmitterBase;
 module Ieee80211TransmitterBase extends NarrowbandTransmitterBase
 {
     parameters:
-        string opMode @enum("a", "b", "g(erp)", "g(mixed)", "n(mixed-2.4Ghz)", "p", "ac", "bd");
-        string bandName @enum("2.4 GHz", "5.9 GHz", "5.9 GHz&20 MHz", "5 GHz","5 GHz&20 MHz","5 GHz&40 MHz","5 GHz&80 MHz","5 GHz&160 MHz");
+        string opMode @enum("a", "b", "g(erp)", "g(mixed)", "n(mixed-2.4Ghz)", "p", "ac", "bd"); // adding the bd opmode
+        string bandName @enum("2.4 GHz", "5.9 GHz", "5.9 GHz&20 MHz", "5 GHz","5 GHz&20 MHz","5 GHz&40 MHz","5 GHz&80 MHz","5 GHz&160 MHz"); // adding 5.9GHz&20MHz band
         int channelNumber;
 	modulation = default("BPSK");
 
