@@ -9,7 +9,7 @@ To be able to use our bd implementation you have to:
 
 Please reference both our papers that demonstrates the performance of the IEEE 802.11bd over the IEEE 802.11p and LTE-V2X mode3 in your future works.
 You can find both papers this github repo:
--	Analysis and Comparison of IEEE 802.11 p and IEEE 802.11 bd.pdf
--	Implementation and Assessment of IEEE 802.11bd for Improved Road Safety.pdf
+-	Papers/Analysis and Comparison of IEEE 802.11 p and IEEE 802.11 bd.pdf
+-	Papers/Implementation and Assessment of IEEE 802.11bd for Improved Road Safety.pdf
 
 
