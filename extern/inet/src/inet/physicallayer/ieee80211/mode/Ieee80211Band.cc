@@ -83,6 +83,8 @@ const Ieee80211ArithmeticalBand Ieee80211CompliantBands::band5GHz80MHz("5 GHz&80
 const Ieee80211ArithmeticalBand Ieee80211CompliantBands::band5GHz160MHz("5 GHz&160 MHz", GHz(5), MHz(160), 2);
 
 const Ieee80211ArithmeticalBand Ieee80211CompliantBands::band5_9GHz("5.9 GHz", GHz(5.86), MHz(10), 7);
+    
+// addin the 5.9GHz&20MHz enumeratedBand composed of 2 20MHz channels the 173 and 179 channel
 
 const Ieee80211EnumeratedBand Ieee80211CompliantBands::band5_9GHz20MHz("5.9 GHz&20 MHz",
 {
