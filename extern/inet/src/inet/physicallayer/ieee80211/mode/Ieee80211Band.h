@@ -83,7 +83,8 @@ class INET_API Ieee80211CompliantBands
     static const Ieee80211ArithmeticalBand band5GHz80MHz;
     static const Ieee80211ArithmeticalBand band5GHz160MHz;
     static const Ieee80211ArithmeticalBand band5_9GHz;
-	static const Ieee80211EnumeratedBand band5_9GHz20MHz;
+    // adding the 5.9GHz&20MHz enumeratedBand composed of 2 20MHz channels the 173 and 179 channel
+    static const Ieee80211EnumeratedBand band5_9GHz20MHz;
 
 
     static const IIeee80211Band *findBand(const char *name);
