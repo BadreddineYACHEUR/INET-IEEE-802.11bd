@@ -258,6 +258,7 @@ class INET_API Ieee80211VHTDataMode : public IIeee80211DataMode, public Ieee8021
         virtual const Ieee80211OFDMModulation* getModulation() const override { return modulationAndCodingScheme->getModulation(); }
 };
 
+// adding the 5.9GHz&20MHz band
 class INET_API Ieee80211VHTMode : public Ieee80211ModeBase
 {
     public:
