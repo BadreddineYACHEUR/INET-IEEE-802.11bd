@@ -42,7 +42,7 @@ unsigned getChannelRank(ChannelNumber ch)
 {
     switch (ch) {
         case channel::CCH:
-            return 10;
+            return 0;
         case channel::SCH1:
             return 1;
         case channel::SCH2:
@@ -55,9 +55,9 @@ unsigned getChannelRank(ChannelNumber ch)
             return 5;
         case channel::SCH6:
             return 6;
-	case channel::SCH0_BD:
+	case channel::SCH0_BD: // 1st 20MHz bd channel
             return 0;
-	case channel::SCH1_BD:
+	case channel::SCH1_BD: // 2nd 20MHz bd channel
             return 1;	
         default:
             return std::numeric_limits<unsigned>::max();
