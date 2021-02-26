@@ -8,8 +8,8 @@ module VanetNic extends Ieee80211Nic
 	
         macType = "Ieee80211Mac";
         mgmtType = "Ieee80211MgmtAdhoc";
-        opMode = "bd";
-        bitrate = default(52 Mbps);
+        opMode = "bd"; // the added operation mode
+        bitrate = default(52 Mbps); // can be 6.5, 13, 19.5, 26, 39, 52, 58.5, 65, 78
 
 	**.opMode = opMode;
 	mac.modeSet = opMode;
@@ -17,7 +17,7 @@ module VanetNic extends Ieee80211Nic
         mac.rx.typename = default("ChannelLoadRx");
 
         radioType = default("VanetRadio");
-        radio.bandName = "5.9 GHz&20 MHz";
+        radio.bandName = "5.9 GHz&20 MHz"; // The new 20MHz channel in the 5.9GHz channel
         radio.bandwidth = 20 MHz;
         radio.channelNumber = default(0);
 	radio.antenna.numAntennas = 8;
