@@ -461,6 +461,7 @@ const DelayedInitializer<std::vector<Ieee80211ModeSet>> Ieee80211ModeSet::modeSe
         { false, Ieee80211VHTCompliantModes::getCompliantMode(&Ieee80211VHTMCSTable::vhtMcs8BW160MHzNss8, Ieee80211VHTMode::BAND_5GHZ, Ieee80211VHTPreambleMode::HT_PREAMBLE_MIXED, Ieee80211VHTModeBase::HT_GUARD_INTERVAL_SHORT) },
         { false, Ieee80211VHTCompliantModes::getCompliantMode(&Ieee80211VHTMCSTable::vhtMcs9BW160MHzNss8, Ieee80211VHTMode::BAND_5GHZ, Ieee80211VHTPreambleMode::HT_PREAMBLE_MIXED, Ieee80211VHTModeBase::HT_GUARD_INTERVAL_SHORT) },
 	}),
+	// adding the bd modeset
 	Ieee80211ModeSet("bd", {
         { true, Ieee80211VHTCompliantModes::getCompliantMode(&Ieee80211VHTMCSTable::vhtMcs0BW20MHzNss1, Ieee80211VHTMode::BAND_5_9GHZ_20MHZ, Ieee80211VHTPreambleMode::HT_PREAMBLE_MIXED, Ieee80211VHTModeBase::HT_GUARD_INTERVAL_LONG) },
         { true, Ieee80211VHTCompliantModes::getCompliantMode(&Ieee80211VHTMCSTable::vhtMcs1BW20MHzNss1, Ieee80211VHTMode::BAND_5_9GHZ_20MHZ, Ieee80211VHTPreambleMode::HT_PREAMBLE_MIXED, Ieee80211VHTModeBase::HT_GUARD_INTERVAL_LONG) },
