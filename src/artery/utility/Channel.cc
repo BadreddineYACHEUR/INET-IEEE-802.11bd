@@ -32,7 +32,7 @@ ChannelNumber parseChannelNumber(const std::string& str)
     } else if (str == "SCH0_BD") {
         channel = channel::SCH0_BD; // 1st 20MHz bd channel
     } else if (str == "SCH1_BD") {
-        channel = channel::SCH1_BD; // 1nd 20MHz bd channel
+        channel = channel::SCH1_BD; // 2nd 20MHz bd channel
     }
 
     return channel;
